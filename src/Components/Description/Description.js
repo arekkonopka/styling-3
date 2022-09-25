@@ -1,23 +1,21 @@
 import { MdOutlineNotStarted } from 'react-icons/md'
 import Card from '../Card'
-import BarUI from '../BarUI'
 
 const Description = () => {
   return (
     <section className="description">
       <div className="description__aside">
-        <BarUI />
-        <h1>The Zabdos Experience</h1>
-        <p className="description__aside--paragraph">
+        <h1 className="description__header">The Zabdos Experience</h1>
+        <p className="description__paragraph">
           Whether it's your first flight or simply your latest, we work to
           anticipate your every need
         </p>
-        <div className="description__wideo">
-          <button>
-            <MdOutlineNotStarted />
-          </button>
-          <p>Watch the full video now!</p>
-        </div>
+        <button className="description__wideo">
+          <MdOutlineNotStarted className="description__wideo--icon" />
+          <p className="description__wideo--paragraph">
+            Watch the full video now!
+          </p>
+        </button>
       </div>
       <div className="description__cards-wrapper">
         <Card paragraph="ARRIVE INSPIRED" header="Business Class" />
@@ -25,7 +23,7 @@ const Description = () => {
         <Card
           paragraph="AWARD WINNING TECHNOLOGY"
           header="Explore the Fleet in AR"
-          long
+          islong
         />
       </div>
     </section>

@@ -12,6 +12,15 @@
     font-size: 40px
     margin: 30px 0
 
+    &::before
+      content: ''
+      display: block
+      width: 40px
+      height: 8px
+      margin: 0 auto 30px auto
+      border-radius: 20px
+      background-color: #4509dd
+
   &__paragraph
     font-size: 22px
     padding-top: 20px
@@ -30,25 +39,45 @@
     .service
       flex: 0 0 30%
 
+@media screen and (max-width: 900px) 
+   
+   .services
+
+    &__header
+      font-size: $font-size-big
+
+    &__paragraph
+      font-size: $font-size-middle
+      width: 100%
+
+    &__wrapper
+      padding-top: 20%
+
+@media screen and (max-width: 680px) 
+   
+  .services
+    padding: 40px 50px
+
+    &__paragraph
+      font-size: $font-size-base
+
+
+
 @media screen and (max-width: 360px) 
 
   .services
     height: auto
     padding: 40px 20px
-    background-color: #fbfbfb
 
     &__header
-      font-size: 25px
+      font-size: $font-size-xl
       margin-top: 30px 
 
     &__paragraph
-      font-size: 16px
       padding-top: 10px
-      width: 100%
 
     &__wrapper
       width: 100%
-      padding-top: 20%
 
       .service 
         flex: 0 0 50%

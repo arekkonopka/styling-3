@@ -5,11 +5,11 @@ import Services from '../Components/Services'
 
 const Main = () => {
   return (
-    <div>
+    <>
       <Introduction />
       <Description />
       <Services />
-    </div>
+    </>
   )
 }
 

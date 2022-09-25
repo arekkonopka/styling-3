@@ -10,10 +10,9 @@ const Introduction = () => {
       <Navbar />
       <section className="introduction__wrapper">
         <div className="introduction__slider">
-          <p className="introduction__slider--description">FLY WITH US TO</p>
+          <p className="introduction__slider--description">fly with us to</p>
           <div className="introduction__slider__tab-wrapper">
-            <span></span>
-            <Tab active number="01" />
+            <Tab isActive number="01" />
             <Tab number="02" />
             <Tab number="03" />
           </div>
@@ -30,13 +29,12 @@ const Introduction = () => {
               className="introduction__content--anchor"
               href={`${window.location}#searchbar`}
             >
-              <p>Let's Go</p>
-              <AiOutlineArrowRight />
+              <p className="introduction__content--paragraph">Let's Go</p>
+              <AiOutlineArrowRight className="introduction__content--icon" />
             </a>
           </div>
         </div>
         <Searchbar />
-        {/* <div className="introduction__shadow"></div> */}
       </section>
     </section>
   )

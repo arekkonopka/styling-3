@@ -7,14 +7,12 @@ import {
 } from 'react-icons/ai'
 import { GiKnifeFork } from 'react-icons/gi'
 
-import BarUI from '../BarUI'
 import Service from '../Service/Service'
 
 const Services = () => {
   return (
     <section className="services">
       <div className="services__header-wrapper">
-        <BarUI classes="-center" />
         <h1 className="services__header">Complement Your Jurney</h1>
         <p className="services__paragraph">
           Explore the additional services we offer to make your journey even

@@ -12,30 +12,39 @@
     margin-right: 40px
     padding: 40px 0px
 
-    h1
+  &__header
       width: 50%
       font-size: 45px
       padding-bottom: 40px
 
-    &--paragraph
+      &::before
+        content: ''
+        display: block
+        width: 40px
+        height: 8px
+        margin-bottom: 30px
+        border-radius: 20px
+        background-color: #4509dd
+
+  &__paragraph
       color: #aaa
       font-size: 22px
       padding-bottom: 40px
       border-bottom: 1px solid #aaa
 
   &__wideo
+    +btn-reset
     display: flex
     align-items: center
     padding-top: 40px
+    cursor: pointer
 
-    button
-      +btn-reset
-      
-      svg 
-        width: 60px
-        height: 60px
-        fill: #4509dd
-    p 
+    &--icon 
+      width: 60px
+      height: 60px
+      fill: #4509dd
+
+    &--paragraph 
       padding-left: 10px
       font-size: 22px
       color: #aaa
@@ -54,41 +63,79 @@
       position: absolute
       top: 0
       right: 15%
-        
 
-@media screen and (max-width: 360px) 
-  
+@media screen  and (max-width: 1920px) and (max-height: 900px)
+
   .description
-    padding: 80px 20px 
+
+    &__cards-wrapper
+
+      .card:nth-child(2)
+        bottom: -15%
+
+@media screen and (max-width: 1366px) and (max-height: 768px)
+
+  .description
+
+    &__cards-wrapper
+
+      .card:nth-child(2)
+        bottom: -20%
+      
+      .card:nth-child(3)
+        right: 15%
+
+@media screen and (max-width: 1220px) 
+
+  .description
+    padding: 100px 100px 
+    
+    &__header
+      font-size: $font-size-big
+
+    &__paragraph
+      font-size: $font-size-middle
+
+    &__wideo
+
+      &--paragraph 
+        font-size: $font-size-base
+
+    &__cards-wrapper
+
+      .card:nth-child(3)
+        right: 5%
+
+@media screen and (max-width: 900px) 
+
+  .description
+    padding: 100px 100px 
     height: auto
     flex-direction: column
-    margin-top: 0px
-
+    
     &__aside
       width: 100%
       margin-right: 0
       padding: 0
 
-      h1
-        width: 100%
-        font-size: 26px
-        padding-bottom: 20px
+    &__header
+      width: 100%
+      font-size: $font-size-big
 
-      &--paragraph
-        font-size: 16px
-        padding-bottom: 20px
+    &__paragraph
+      font-size: $font-size-base
+      padding-bottom: 25px
 
     &__wideo
       padding: 20px 0
 
-      button
+      &--icon
+        width: 40px
+        height: 40px
       
-        svg 
-          width: 30px
-          height: 30px
-      p 
-        font-size: 16px
-          
+      &--paragraph 
+        font-size: $font-size-middle
+
     &__cards-wrapper
       display: flex
       justify-content: center
@@ -103,4 +150,27 @@
       
       .card:nth-child(3)
         position: static
-          
+
+@media screen and (max-width: 360px) 
+  
+  .description
+    padding: 80px 20px 
+
+    &__header
+      font-size: 26px
+      padding-bottom: 20px
+
+    &__paragraph
+      font-size: $font-size-base
+      padding-bottom: 20px
+
+    &__wideo
+
+      &--icon
+        width: 30px
+        height: 30px
+      
+      &--paragraph 
+        font-size: $font-size-base
+      
+

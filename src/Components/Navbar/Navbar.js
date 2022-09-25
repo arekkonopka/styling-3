@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <GiAirplaneDeparture />
+        <GiAirplaneDeparture className="navbar__icon" />
         <p className="navbar__logo--name">Zabdos</p>
       </div>
       <div className="navbar__wrapper">
@@ -12,9 +12,9 @@ const Navbar = () => {
         <button className="navbar__check">Check In</button>
         <div className="navbar__avatar"></div>
         <button className="navbar__burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="navbar__burger-menu--line"></span>
+          <span className="navbar__burger-menu--line"></span>
+          <span className="navbar__burger-menu--line"></span>
         </button>
       </div>
     </nav>

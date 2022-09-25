@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Tab = ({ active, number }) => {
+const Tab = ({ isActive, number }) => {
   return (
-    <div className={`tab ${active && '-active'}`}>
-      <div className={`tab__number ${active && '-active'}`}>{number}</div>
-      <div className={`tab__dot ${active && '-active'}`}></div>
+    <div className={`tab ${isActive ? '-active' : ''}`}>
+      <div className={`tab__number ${isActive ? '-active' : ''}`}>{number}</div>
+      <div className={`tab__dot ${isActive ? '-active' : ''}`}></div>
     </div>
   )
 }

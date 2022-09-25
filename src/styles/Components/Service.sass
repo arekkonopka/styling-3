@@ -5,8 +5,8 @@
   flex-direction: column
 
   &__icon
-      width: 70px
-      height: 70px
+      width: $service-icon-width
+      height: $service-icon-height
       border-radius: 50%
       box-shadow: 0 0 10px #aaa
       display: flex
@@ -14,6 +14,12 @@
       align-items: center
       cursor: pointer
 
+      &.-active
+        background-color: #4509dd 
+        
+        svg 
+          fill: white
+      
       &:hover
         background-color: #4509dd 
 
@@ -29,10 +35,10 @@
     margin-top: 20px
     color: #aaa
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 600px)
 
   .service
-    padding-bottom: 40px
+  
     &__icon
 
         svg
@@ -40,5 +46,15 @@
           height: 40%
 
     &__title
+      min-height: 40px
       margin-top: 10px
-      font-size: 13px
+      font-size: $font-size-smaller
+
+@media screen and (max-width: 360px)
+
+  .service
+    padding-bottom: 40px
+
+    &__title
+      margin-top: 10px
+      font-size: $font-size-smaller
