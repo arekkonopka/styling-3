@@ -1,0 +1,123 @@
+.searchbar
+  width: 100%
+  display: flex
+  margin-top: 200px
+  height: 120px
+
+  &__icon
+    width: 120px
+    height: auto
+    padding: 40px
+    fill: #aaa
+    background-color: rgba(255,255,255, 0.6)
+
+  &__content
+    flex-grow: 1
+    background-color: #fff
+    padding: 0 80px
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+
+  &__paragraph
+    font-size: $font-size-xxs
+    color: #aaa
+    padding-bottom: 10px
+
+  &__select
+    font-size: $font-size-lg
+    border: none
+
+  &__button
+    +btn-reset
+    width: 200px
+    background-color: #4509dd
+    color: white
+    font-size: 26px
+    cursor: pointer
+
+@media screen and (max-width: 1366px) 
+  .searchbar
+    margin-top: 60px
+    height: 80px
+
+    &__icon
+     width: 40px
+
+    &__content
+      padding: 0 50px
+
+
+    &__airports
+      padding: 15px
+
+    &__paragraph
+       font-size: $font-size-smaller
+
+    &__select
+      font-size: $font-size-middle
+
+    &__button
+      font-size: $font-size-lg
+
+@media screen and (max-width: 900px) 
+  .searchbar  
+    height: 80px
+
+    &__content
+      padding: 0 30px
+
+    &__airports
+      padding: 10px
+
+    &__paragraph
+      font-size: 10px
+
+    &__button
+      font-size: $font-size-lg
+
+@media screen and (max-width: 750px) 
+ .searchbar
+    width: 100%
+    margin-top: 20px
+    height: 130px
+    flex-direction: column
+    align-items: center
+
+    &__icon
+      display: none
+
+    &__content
+      width: 100%
+      height: 100px
+
+    &__airports
+      padding: 10px
+    
+    &__paragraph
+      font-size: $font-size-xxs
+
+    &__select
+      font-size: $font-size-base
+
+    &__button
+      width: 100%
+      height: 50px
+      margin-top: 10px
+      font-size: $font-size-smaller
+
+
+@media screen and (max-width: 360px) 
+  .searchbar
+
+    &__airports
+      padding: 10px
+    
+    &__paragraph
+      font-size: 10px
+
+    &__select
+      font-size: $font-size-smaller
+
+

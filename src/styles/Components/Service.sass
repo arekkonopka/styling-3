@@ -1,0 +1,60 @@
+.service
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  &__icon
+      width: $service-icon-width
+      height: $service-icon-height
+      border-radius: 50%
+      box-shadow: 0 0 10px #aaa
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+
+      &.-active
+        background-color: #4509dd 
+        
+        svg 
+          fill: white
+      
+      &:hover
+        background-color: #4509dd 
+
+        svg 
+          fill: white
+      
+      svg
+        width: 50%
+        height: 50%
+        fill: #4509dd 
+
+  &__title
+    margin-top: 20px
+    color: #aaa
+
+@media screen and (max-width: 600px)
+
+  .service
+  
+    &__icon
+
+        svg
+          width: 40%
+          height: 40%
+
+    &__title
+      min-height: 40px
+      margin-top: 10px
+      font-size: $font-size-smaller
+
+@media screen and (max-width: 360px)
+
+  .service
+    padding-bottom: 40px
+
+    &__title
+      margin-top: 10px
+      font-size: $font-size-smaller

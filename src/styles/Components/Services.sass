@@ -1,0 +1,84 @@
+.services
+  height: 100vh
+  width: 100%
+  padding: 40px 100px
+  background-color: #fbfbfb
+  text-align: center
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  &__header
+    font-size: 40px
+    margin: 30px 0
+
+    &::before
+      content: ''
+      display: block
+      width: 40px
+      height: 8px
+      margin: 0 auto 30px auto
+      border-radius: 20px
+      background-color: #4509dd
+
+  &__paragraph
+    font-size: 22px
+    padding-top: 20px
+    margin: 0 auto
+    width: 40%
+    color: #aaa
+
+  &__wrapper
+    width: 100%
+    padding-top: 10%
+    flex-grow: 0.5
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+    .service
+      flex: 0 0 30%
+
+@media screen and (max-width: 900px) 
+   
+   .services
+
+    &__header
+      font-size: $font-size-big
+
+    &__paragraph
+      font-size: $font-size-middle
+      width: 100%
+
+    &__wrapper
+      padding-top: 20%
+
+@media screen and (max-width: 680px) 
+   
+  .services
+    padding: 40px 50px
+
+    &__paragraph
+      font-size: $font-size-base
+
+
+
+@media screen and (max-width: 360px) 
+
+  .services
+    height: auto
+    padding: 40px 20px
+
+    &__header
+      font-size: $font-size-xl
+      margin-top: 30px 
+
+    &__paragraph
+      padding-top: 10px
+
+    &__wrapper
+      width: 100%
+
+      .service 
+        flex: 0 0 50%
+

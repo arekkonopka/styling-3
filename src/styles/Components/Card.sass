@@ -1,0 +1,94 @@
+.card
+  width: 40%
+  margin: $m-xs
+  box-shadow: 0 0 11px #aaa
+
+  &__image
+    width: 100%
+    height: 240px
+    background-image: url('../../../src/assets/images/airplane-reduced.jpg')
+    background-size: cover
+    background-repeat: no-repeat 
+ 
+    &.-long
+      height: 600px
+ 
+  &__body
+    background-color: #fff
+    padding: $m-sml $m-md
+    word-wrap: break-word
+    
+  &__kicker
+    font-size: $font-size-smaller
+    padding-bottom: $m-xs
+    border-bottom: 1px solid #aaa
+    color: #aaa
+
+  &__header
+    font-size: $font-size-xl
+    padding-top: $m-xs
+
+@media screen and (max-width: 1920px) and (max-height: 900px)
+  
+  .card
+    
+    &__header
+      font-size: $font-size-xl
+
+    &__image
+      height: 180px
+
+      &.-long
+        height: 500px
+
+@media screen and (max-width: 1366px) and (max-height: 768px)
+
+  .card
+
+    &__image
+      height: 200px
+
+
+@media screen and (max-width: 1220px) 
+
+  .card
+    width: 45%
+
+    &__kicker
+      font-size: $font-size-xxs
+   
+
+    &__header
+      font-size: $font-size-lg
+
+
+
+@media screen and (max-width: 900px) 
+  
+  .card
+  
+    &__image
+      height: 240px
+      
+      &.-long
+        height: 240px
+
+@media screen and (max-width: 360px) 
+    
+  .card
+    margin-bottom: 20px
+
+    &__image
+      height: 150px
+  
+    
+    &__body
+      width: 100%
+      height: 100px
+      padding: 20px 20px
+      
+    &__paragraph
+      font-size: $font-size-xxxs
+
+    &__header
+      font-size: $font-size-lg
