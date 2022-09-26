@@ -10,9 +10,9 @@ const Description = () => {
           Whether it's your first flight or simply your latest, we work to
           anticipate your every need
         </p>
-        <button className="description__wideo">
-          <MdOutlineNotStarted className="description__wideo--icon" />
-          <p className="description__wideo--paragraph">
+        <button className="description__video">
+          <MdOutlineNotStarted className="description__video-icon" />
+          <p className="description__video-paragraph">
             Watch the full video now!
           </p>
         </button>
